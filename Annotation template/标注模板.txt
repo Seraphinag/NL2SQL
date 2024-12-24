@@ -1,0 +1,30 @@
+[
+    {
+        "sentence": "检索在职员工的全名和员工 ID",
+        "annotations": [
+            {"token": "全名(full_name)", "label": "Attribute"},
+            {"token": "ID(employee_id)", "label": "Attribute"},
+            {"token": "员工(staff_directory)", "label": "Object"},
+            {"token": "在职(is_active = 1)", "label": "Restrict"}
+        ]
+    },
+    {
+        "sentence": "查找具有特定序列号且属于特定药房的资产。",
+        "annotations": [
+            {"token": "*", "label": "Attribute"}
+            {"token": "资产(assets)", "label": "Object"}
+	    {"token": "特定序列号(serial_number = 'ABC123')", "label": "Restrict"}
+            {"token": "特定药房(pharmacies_id = 456)", "label": "Restrict"}
+        ]
+    },
+    {
+        "sentence": "获取上周产生的所有危险。",
+        "annotations": [
+            {"token": "*", "label": "Attribute"}
+            {"token": "危险(hazards)", "label": "Object"}
+	    {"token": "上周产生的所有危险(created_at >= NOW() - INTERVAL '1 week')", "label": "Restrict"}
+        ]
+    },
+
+   
+]
