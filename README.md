@@ -15,4 +15,4 @@ Explanations for each folder：
 
 6、keyword_extraction_results/semantic_dependency_analysis_results_train.json----Intermediate processing data file.
 
-If you have any questions,please send an email to marshall441237@gmail.com
+This is mainly for processing Chinese. If you want to process English, you can, but the effect may not be as good as some other advanced research results, and it is difficult to surpass. In this process, the related processing models I used are: roberta_chinese_base, base2, lilt-xlm-roberta-base, which can be downloaded from hugging face.
